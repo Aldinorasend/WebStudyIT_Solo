@@ -9,10 +9,11 @@ export default {
       extend: {},
       colors: {
         transparent: 'transparent',
-        'primaryColor': '#113f67',
-        'secondaryColor' : '#226597',
-        'thirdColor' : '#87c0cd',
-        'textColor' : '#F3F9FB'
+        'sideBarLight': '#F8F9FA',
+        'titleColorLight' : '#003366',
+        'hoverLight' : '#E1E8ED',
+        'activeLight' : '#0066CC',
+        'textColorLight' : '#001F3F'
 
       }
     },
