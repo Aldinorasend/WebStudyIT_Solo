@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite('resources/css/app.css')
     <title>@yield('title')</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 </head>
 <body>
     <!-- Sidebar Section -->
@@ -116,8 +117,8 @@
             </div>
         </div>
         <div class="contet p-4">
-            @yield('content')
             <h1 class="text-textColorLight font-bold text-3xl">@yield('content-title')</h1>
+            @yield('content')
         </div>
     </div>
     <!-- End Sidebar Section -->
@@ -130,7 +131,7 @@
         menuItems.forEach(item => {
             const link = item.querySelector('a'); // Mengambil elemen <a> dalam .btn
             if (link && link.getAttribute('href') === currentLocation) {
-                item.classList.add('bg-activeLight', 'text-hoverLight', 'rounded-lg'); // Menggunakan Tailwind untuk gaya aktif
+                item.classList.add('bg-activeLight', 'text-hoverLight', 'rounded-lg', 'font-medium'); // Menggunakan Tailwind untuk gaya aktif
             }
         });
     });

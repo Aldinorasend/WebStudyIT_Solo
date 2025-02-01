@@ -4,18 +4,20 @@ export default {
       "./resources/**/*.blade.php",
       "./resources/**/*.js",
       "./resources/**/*.vue",
+      "./resources/**/*.blade.php",
     ],
     theme: {
-      extend: {},
-      colors: {
-        transparent: 'transparent',
-        'sideBarLight': '#F8F9FA',
-        'titleColorLight' : '#003366',
-        'hoverLight' : '#E1E8ED',
-        'activeLight' : '#0066CC',
-        'textColorLight' : '#001F3F'
-
-      }
+      extend: {
+        colors: {
+          transparent: 'transparent',
+          'sideBarLight': '#F8F9FA',
+          'titleColorLight' : '#003366',
+          'hoverLight' : '#E1E8ED',
+          'activeLight' : '#0066CC',
+          'textColorLight' : '#001F3F',
+  
+        }
+      },
     },
     plugins: [],
   }

@@ -14,7 +14,8 @@ class Instructor extends Model
         'lastname',
         'email',
         'phone_number',
-        'profile_url'
+        'created_at',
+        'updated_at'
     ];
     public $timestamps = true;
 }
